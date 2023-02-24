@@ -1,4 +1,4 @@
-# Upgrading ROS versions
+# Upgrading ROS Versions
 
 Recently, I migrated the software stack of my robot from [ROS 2 Galactic](https://docs.ros.org/en/galactic/index.html) to [ROS 2 Humble](https://docs.ros.org/en/humble/index.html). I thought it was going to be straightforward - add my Galactic nodes to a new Humble workspace, compile and it will work right away. But I faced a few issues getting my nodes to compile, and in this article, I will detail these issues and how I fixed them.
 
