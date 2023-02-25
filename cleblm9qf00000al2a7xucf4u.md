@@ -1,4 +1,4 @@
-# Upgrading ROS 2 / micro-ROS versions
+# Upgrading ROS 2, micro-ROS versions
 
 Recently, I migrated the software stack of my robot from [ROS 2 Galactic](https://docs.ros.org/en/galactic/index.html) to [ROS 2 Humble](https://docs.ros.org/en/humble/index.html). I thought it was going to be straightforward - add my Galactic nodes to a new Humble workspace, compile and it will work right away. But I faced a few issues getting my nodes to compile, and in this article, I will detail these issues and how I fixed them.
 
@@ -67,8 +67,8 @@ First, I had just learned about [Foxglove's own WebSocket](https://foxglove.dev/
 
 ### Micro-ROS
 
-Like ROS 2, [micro-ROS](https://micro.ros.org/) also has had a lot of changes between Galactic and Humble. The micro-ROS code which was already on the Teensy platform used Galactic libraries, and when I tried it with the micro-ROS agent in Humble, it did not work at all. So, I had to install the Humble libraries on my laptop and compile it, but then I was unable to compile the Arduino code.  
-  
+Like ROS 2, [micro-ROS](https://micro.ros.org/) also has had a lot of changes between Galactic and Humble. The micro-ROS code which was already on the Teensy platform used Galactic libraries, and when I tried it with the micro-ROS agent in Humble, it did not work at all. So, I had to install the Humble libraries on my laptop and compile it, but then I was unable to compile the Arduino code.
+
 [I found out](https://github.com/micro-ROS/micro_ros_arduino/issues/1285) that now, the supported method for running micro-ROS on Teensy with Arduino used the [Arduino 2.0 IDE](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing) and [a different process to set up Teensyduino](https://www.pjrc.com/arduino-ide-2-0-0-teensy-support/). Once I set everything up, I was able to use the new Humble libraries. However, I had to comment out the [Parameter Server](https://micro.ros.org/docs/tutorials/programming_rcl_rclc/parameters/). The parameter server is initialized differently in micro-ROS Humble as compared to previous ROS 2 versions.
 
 I made the necessary changes according to the documentation, but I wasn't able to get it working. I was able to upload the code, but the microcontroller always went into the error loop, triggering the onboard LED to flash. After temporarily commenting out the parameter server, the remaining parts worked perfectly. So, when the akros2\_drive launch file is executed, the ds4\_driver reads joystick inputs and converts joystick inputs to twist messages, which the Teensy subscribes to in order to drive the motors.
@@ -112,4 +112,4 @@ If you've been following my progress on [Twitter](https://twitter.com/kamathsblo
 
 %[https://twitter.com/K66941741/status/1604849092483776512] 
 
-That's it for the next few weeks. Small and steady steps.
+That's it for this weekend. Small and steady steps.
