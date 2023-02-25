@@ -92,6 +92,8 @@ But neither of the commands worked. I will try it again when I set up my other R
 
 ## Next up
 
-I plan on fixing the parameter server on micro-ROS. This will enable me to set PID constants at runtime and re-tune the controllers. I also want to set up [tracing for ROS 2](https://github.com/ros2/ros2_tracing) and [micro-ROS](https://micro.ros.org/docs/tutorials/advanced/tracing/).
+Eventually, I want to stop using game controllers entirely. I've been meaning to buy a Nintendo Switch and will be doing so soon. I'm mainly doing it to play Hogwarts Legacy, but I also intend to install Ubuntu and ROS 2 on it. I just want to make sure which versions can run Ubuntu, and choose what to get accordingly.
 
-However, that's enough for the weekend. I also want to finish reading [my book for the month](https://www.goodreads.com/en/book/show/40876575). I am planning on reading one book per month in 2023, and have been successful so far (I read [this one for January](https://www.goodreads.com/en/book/show/45722402)).
+For the next weekend, I plan on fixing the parameter server on micro-ROS. This will enable me to set PID constants at runtime and re-tune the controllers. I also want to set up [tracing for ROS 2](https://github.com/ros2/ros2_tracing) and [micro-ROS](https://micro.ros.org/docs/tutorials/advanced/tracing/).
+
+Now, I want to finish reading [my book for the month](https://www.goodreads.com/en/book/show/40876575). I am planning on reading one book per month in 2023, and have been successful so far (I read [this one for January](https://www.goodreads.com/en/book/show/45722402)).
