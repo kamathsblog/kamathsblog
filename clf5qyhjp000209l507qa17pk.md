@@ -68,7 +68,7 @@ While testing my implementation, I ran two other nodes alongside the mesh publis
 
 Originally, in ROS 1, I was using the mesh publisher node instead of the joint\_state\_publisher to publish the JointState message. The node subscribed to the measured speeds of each motor from the [ROSSerial firmware](https://github.com/adityakamath/arduino_sketchbook_ros/tree/main/akros_holo_drive) and calculated the speed in rad/s and the position in radians for each joint. This was then published as a combined JointState message to robot\_state\_publisher.
 
-In ROS 2, I decided to do this directly from the micro-ROS firmware. So, instead of publishing the measured speeds of each motor, the micro-ROS node would now publish a combined JointState message with the measured speeds and positions of each motor. I made the necessary changes to the micro-ROS firmware, which can be seen [here](https://github.com/adityakamath/akros2_firmware/blob/akros2_humble/akros2_firmware.ino).
+In ROS 2, I decided to do this directly from the [micro-ROS firmware](https://github.com/adityakamath/akros2_firmware). So, instead of publishing the measured speeds of each motor, the micro-ROS node would now publish a combined JointState message with the measured speeds and positions of each motor. I made the necessary changes to the micro-ROS firmware, which can be seen [here](https://github.com/adityakamath/akros2_firmware/blob/akros2_humble/akros2_firmware.ino).
 
 I was originally also publishing the required speeds for each motor, so I also changed that to publish another JointState message but with the required speeds and positions of each joint. While it is not used anywhere, it is useful for me as a debugging and controller tuning tool.
 
@@ -77,6 +77,40 @@ I was originally also publishing the required speeds for each motor, so I also c
 Finally, I set up the launch file. I created a launch argument to switch between the micro-ROS node and the joint\_state\_publisher to publish the combined joint states. While I did start by checking out [rosetta\_launch](https://github.com/MetroRobots/rosetta_launch) (an amazing resource about writing ROS 2 launch files), I eventually ended up just asking [ChatGPT](https://chat.openai.com/) to write it for me. Since ROS and its community-developed resources are open-source and mostly freely available on GitHub, ChatGPT seems to be trained really well to write simple ROS (1, 2, and micro-ROS) code. Once the [akros2\_description launch file](https://github.com/adityakamath/akros2_description/blob/humble/launch/akros2_description_launch.py) was ready, I then updated the [akros2\_bringup launch file](https://github.com/adityakamath/akros2_bringup/blob/humble/launch/akros2_bringup_launch.py) to include the description launch file and set the correct launch arguments. Once ready, I could launch everything (sensors, motor control using micro-ROS, visualization nodes, and the robot description including the mesh publisher) using a single launch file. Here is the resulting visualization on Foxglove Studio:
 
 %[https://www.youtube.com/watch?v=W2UfhBy7NNU] 
+
+### Update:
+
+I've been using this for nearly 2 weeks now, but the visualization hasn't always been reliable. I could only reproduce the visualization from the video around 30% of the time I tried the launch file. I saw two main issues:
+
+1. Sometimes the transforms didn't load correctly. The 3D panel on Foxglove Studio looked like the below image. The top panel, [LD06](https://github.com/linorobot/ldlidar) and the T265 were shown as separate transform trees and not connected to the rest of the robot. This mainly (90% of the time) happened in two situations:
+    
+    * Foxglove Studio was kept running, and the launch file was terminated and re-launched after some time (usually a few minutes)
+        
+    * Foxglove Studio was closed and re-opened in a few minutes while the [bringup launch file](https://github.com/adityakamath/akros2_bringup/blob/humble/launch/akros2_bringup_launch.py) was kept running.
+        
+    
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1679083806337/7e68721d-4306-4c37-9a58-33faaffbeda4.jpeg align="center")
+    
+    In other instances, the wheels (defined as continuous joints) were not displayed at all if the JointState message wasn't published by the micro-ROS node.
+    
+2. While the joint states were published correctly, the visualization wasn't always as smooth as in the above video. Sometimes the visualization was jerky, sometimes the wheels didn't move at all.
+    
+
+For background, I recently moved from [ROSBridge](https://foxglove.dev/docs/studio/connection/ros2#rosbridge) to [Foxglove Bridge](https://foxglove.dev/docs/studio/connection/ros2#foxglove-websocket) to connect ROS 2 data from the robot to Foxglove Studio. I decided to try using [rosbridge\_server](https://github.com/RobotWebTools/rosbridge_suite/tree/ros2/rosbridge_server) instead (I hadn't tried it in ROS 2 so far, only in ROS 1 Noetic) and see if it fares any better. It did, to some extent.
+
+The transform tree issue from above was solved, both when Foxglove Studio was closed/re-opened and also when the launch file was terminated/re-launched. The wheels still needed JointState message to be published, but unlike foxglove\_bridge, the meshes were updated as soon as the micro-ROS node was enabled. I still need to update the mesh publisher to publish one JointState message for the wheels when it is launched so that the meshes are initialized.
+
+The second issue with the visualization is not completely solved but there's some improvement. The wheels now move correctly according to the joint states, however, there is significant and visible latency now, up to nearly 0.5 seconds at times. There's also a little bit of latency with the laser scan, which is quite visible when turning. Results can be seen in the video below (all the transforms are correctly published, I had disabled them when recording this example):
+
+%[https://www.youtube.com/watch?v=ioM_6P7OYRg] 
+
+For now, I have decided to go with rosbridge\_server as my means of connecting live data to Foxglove Studio. But I hope these issues are fixed in later updates of [foxglove-bridge](https://github.com/foxglove/ros-foxglove-bridge). They've done a great job in reducing latency because when it works, it works really well and with minimal latency.
+
+However, my priority for visualizing the robot is a correct and reliable transform tree, any latency is fine as long as data is not being dropped. I guess that was the problem with the first issue with foxglove\_bridge: I'm using it to publish a lot of data - meshes, transforms, laser scans and sometimes camera streams, and possibly a few messages were being dropped to provide such low latency.
+
+On the plus side, Foxglove Studio finally supports touchscreen input, I only realized it by accident while trying to clean up some dust from my screen. Looks like its been [supported for more than half a year now](https://github.com/foxglove/studio/issues/1891).
+
+%[https://youtu.be/PaJSy2qUbi0] 
 
 ## Next Up
 
