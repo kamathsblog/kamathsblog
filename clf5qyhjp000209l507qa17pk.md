@@ -108,9 +108,9 @@ For now, I have decided to go with rosbridge\_server as my means of connecting l
 
 However, my priority for visualizing the robot is a correct and reliable transform tree, any latency is fine as long as data is not being dropped. I guess that was the problem with the first issue with foxglove\_bridge: I'm using it to publish a lot of data - meshes, transforms, laser scans and sometimes camera streams, and possibly a few messages were being dropped to provide such low latency.
 
-On the plus side, Foxglove Studio finally supports touchscreen input, I only realized it by accident while trying to clean up some dust from my screen. Looks like it's been [supported for more than half a year now](https://github.com/foxglove/studio/issues/1891).
+On the plus side:
 
-%[https://youtu.be/PaJSy2qUbi0] 
+%[https://twitter.com/kamathsblog/status/1637159680337117185] 
 
 ## Next Up
 
