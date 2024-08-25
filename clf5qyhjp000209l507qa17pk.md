@@ -112,6 +112,10 @@ On the plus side:
 
 %[https://twitter.com/kamathsblog/status/1637159680337117185] 
 
+### Update (October 2023)
+
+Seems like my issues with Foxglove Bridge have been resolved. I no longer have the issue with the transform tree, and it seems to work even over a VPN connection. Reverting back to Foxglove Bridge for now, although I have still kept the option to switch to ROSBridge if I want...
+
 ## Next Up
 
 Next up I want to stick to my earlier plan and set up the [Parameter Server on micro-ROS](https://micro.ros.org/docs/tutorials/programming_rcl_rclc/parameters/). Like I mentioned last time, I also want to explore [tracing for ROS 2](https://github.com/ros2/ros2_tracing) and [micro-ROS](https://micro.ros.org/docs/tutorials/advanced/tracing/). As for [the book for February](https://www.goodreads.com/book/show/40876575-utopia-for-realists), I was able to finish it (although a few days late). For March, I chose [this book](https://www.goodreads.com/book/show/36062756-science-ish?ref=nav_sb_ss_1_9). And speaking of books, I also received [this one](https://www.amazon.com/Concise-Introduction-Robot-Programming-ROS2/dp/1032264659) by [Francisco Martin Rico](https://twitter.com/Fmrico) during the week:
