@@ -1,8 +1,8 @@
 ---
-title: "Recap: ROSCon 2022 Kyoto"
+title: "ROSCon 2022 - Kyoto, Japan"
 datePublished: Wed Dec 28 2022 16:53:06 GMT+0000 (Coordinated Universal Time)
 cuid: clcc6ntq7000c08mf9hlc1o8y
-slug: recap-roscon-2022-kyoto
+slug: roscon-2022-kyoto
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1672070974021/457f3d3b-e474-4287-b294-77855b8ef016.jpeg
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1672505566861/c8229192-4144-40ae-9b0b-4342340c69f9.jpeg
 tags: robotics, ros, roscon
