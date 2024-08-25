@@ -8,7 +8,7 @@ tags: robotics, sensors, ros, ros2
 
 ---
 
-In my last post of 2023, I'll try to summarize what I've been up to these last few months. Firstly, I've been playing around with some more sensors - a [VL53L7CX ToF Imager](https://www.st.com/en/imaging-and-photonics-solutions/vl53l7cx.html) and a [Raspberry Pi Sense HAT](https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat), and a new controller - an [8BitDo SN30 Pro](https://www.8bitdo.com/sn30-pro-g-classic-or-sn30-pro-sn/) gamepad. Besides this, I also spent some time upgrading my AKROS2 robots - both the mecanum and omni-wheeled variants. I've covered a lot of different things in this post, so I've ordered this post in the same order as I did these different things. However, feel free to use the table of contents and read it in any order you want. Let's start with the sensors and the controller first...
+In my last post of 2023, I'll try to summarize what I've been up to these last few months. Firstly, I've been playing around with some more sensors - a [VL53L7CX ToF Imager](https://www.st.com/en/imaging-and-photonics-solutions/vl53l7cx.html), a [Raspberry Pi Sense HAT](https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat), and a new controller - an [8BitDo SN30 Pro](https://www.8bitdo.com/sn30-pro-g-classic-or-sn30-pro-sn/) gamepad. Besides this, I also spent some time upgrading my AKROS2 robots - both the mecanum and omni-wheeled variants. I've covered a lot of different things in this post, so I've ordered this post in the same order as I did these different things. However, feel free to use the table of contents and read it in any order you want. Let's start with the sensors and the controller first...
 
 ## Sensors
 
