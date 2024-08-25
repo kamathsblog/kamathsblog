@@ -1,4 +1,13 @@
-# Recap: ROSCon 2022 Kyoto
+---
+title: "Recap: ROSCon 2022 Kyoto"
+datePublished: Wed Dec 28 2022 16:53:06 GMT+0000 (Coordinated Universal Time)
+cuid: clcc6ntq7000c08mf9hlc1o8y
+slug: recap-roscon-2022-kyoto
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1672070974021/457f3d3b-e474-4287-b294-77855b8ef016.jpeg
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1672505566861/c8229192-4144-40ae-9b0b-4342340c69f9.jpeg
+tags: robotics, ros, roscon
+
+---
 
 2022 was without a doubt an amazing year, as it included my very first trip to Japan and my very first [ROSCon](https://roscon.ros.org/2022/). ROSCon, for the uninitiated, is the Robot Operating System ([ROS](https://www.ros.org/)) conference, an annual gathering of roboticists, developers, researchers, and hobbyists. ROSCon 2022 was extra special, as the ROS community was able to meet each other after two years of virtual ROSCon events.
 
