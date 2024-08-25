@@ -1,4 +1,12 @@
-# Teleop with Game Controllers
+---
+title: "Teleop with Game Controllers"
+datePublished: Fri Feb 17 2023 23:00:15 GMT+0000 (Coordinated Universal Time)
+cuid: clekkfqjh000409i874hm89a1
+slug: teleop-with-game-controllers
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1677277258640/86d4bc77-02ee-409c-9ff7-622b3deb8922.jpeg
+tags: robotics, controllers, ros, ros2
+
+---
 
 In my [last post](https://adityakamath.hashnode.dev/upgrading-ros-2-micro-ros-versions), I talked about migrating from ROS 2 [Galactic](https://docs.ros.org/en/galactic/index.html) to [Humble](https://docs.ros.org/en/humble/index.html). I faced a few problems, some of which I solved, but there were still a few open issues:
 
@@ -67,7 +75,7 @@ Just like the PS4 controller, I was unable to set the vibration motors / rumble 
 
 ## Final thoughts
 
-After trying all three, I had to choose one controller to use with my robot. They all worked quite well and were very similar to each other in performance. The choice got more difficult after I discarded the Sixaxis controller straightaway. From the remaining two, I finally chose the PS4 controller - mainly because there are a few things that I want to implement in the joystick\_drivers package - a function to read the trackpad and its buttons, and a way to set feedback like rumble and LED control. I also have an accessory for the PS4 controller that lets me attach a phone to it, which makes it quite easy to capture videos.
+After trying all three, I had to choose one controller to use with my robot. They all worked quite well and were very similar to each other in performance. I finally chose the PS4 controller - mainly because there are a few things that I want to implement in the joystick\_drivers package - a function to read the trackpad and its buttons, and a way to set feedback like rumble and LED control. I also have an accessory for the PS4 controller that lets me attach a phone to it, which makes it quite easy to capture videos.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1677358507029/888f06e1-01bc-4303-9472-7484e32ca9ee.jpeg align="center")
 
@@ -79,7 +87,7 @@ After trying all three, I had to choose one controller to use with my robot. The
 
 Another reason is that I still want to work on ds4\_driver and try to fix it, even though I won't be using it anymore. I not only want to see if my suspicion of the RT kernel interfering with the [ds4drv](https://github.com/naoki-mizuno/ds4drv/tree/devel) driver is true or not, but I also feel bad because these issues started popping up after a significant change that I had contributed. So, I wanted to see it fixed.
 
-### Update
+## Update
 
 Luckily, the maintainer of the package was able to recreate [the issue I had created](https://github.com/naoki-mizuno/ds4_driver/issues/34), and fix it to some extent. I tested it out on my setup, and the twist publisher did not die in a while. Seems like the status publish rate was too high, and the issue was resolved once it was limited to 100 Hz. However, both the maintainer and I could only get ~80Hz as a publish rate on average. However, I was still not able to set the LED colors on the controller. I even tried setting the color directly using [ds4drv](https://github.com/naoki-mizuno/ds4drv/tree/devel):
 
