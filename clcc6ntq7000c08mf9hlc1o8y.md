@@ -9,7 +9,7 @@ tags: robotics, ros, roscon
 
 ---
 
-2022 was without a doubt an amazing year, as it included my very first trip to Japan and my very first [ROSCon](https://roscon.ros.org/2022/). ROSCon, for the uninitiated, is the Robot Operating System ([ROS](https://www.ros.org/)) conference, an annual gathering of roboticists, developers, researchers, and hobbyists. ROSCon 2022 was extra special, as the ROS community was able to meet each other after two years of virtual ROSCon events.
+2022 was an incredible year, mostly thanks to my very first trip to Japan and my very first [ROSCon](https://roscon.ros.org/2022/). ROSCon, if you are new to the Robot Operating System is the annual [ROS](https://www.ros.org/) conference, gathering of roboticists, developers, researchers, and hobbyists for lectures, workshops and other events. ROSCon 2022 was extra special, as the ROS community was able to meet each other after two years of virtual ROSCon events.
 
 ![ROSCon 2022, Kyoto](https://cdn.hashnode.com/res/hashnode/image/upload/v1671974944252/9eba4ad4-1387-4fd6-97a5-87f31590736b.jpeg align="center")
 
