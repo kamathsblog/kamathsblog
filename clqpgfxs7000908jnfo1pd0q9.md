@@ -1,5 +1,5 @@
 ---
-title: "Last update of 2023"
+title: "2023: A year in review"
 datePublished: Thu Dec 28 2023 17:04:18 GMT+0000 (Coordinated Universal Time)
 cuid: clqpgfxs7000908jnfo1pd0q9
 slug: last-update-of-2023
@@ -168,9 +168,26 @@ Next, I added the LD06 LIDAR and a [BNO085 IMU from Adafruit](https://www.adafru
 
 I am currently waiting for the [laser-cut base plate](https://snijlab.nl/) and the IMU to arrive in the first week of January, so the final assembly will be slightly delayed.
 
+# Everything else
+
+Since this is a recap of the year, I also worked on these things as well (with linked articles):
+
+* I started the year by upgrading to [ROS 2 Humble and micro-ROS Humble](https://kamathsblog.com/upgrading-ros-2-micro-ros-versions) and experimenting with [teleop using different game controllers](https://kamathsblog.com/teleop-with-game-controllers)
+    
+* I then [migrated the mecanum robot's description file to ROS 2 Noetic to ROS 2 Humble](https://kamathsblog.com/updating-the-robot-description)
+    
+* Next, I fixed some issues I was having with [micro-ROS Galactic, especially the Parameter Server](https://kamathsblog.com/micro-ros-parameter-server)
+    
+* In April, I decided to build a [digital twin of the mecanum robot in Unity](https://kamathsblog.com/visualizing-robots-in-unity).
+    
+* I got bored with the mecanum robot, so I decided to play around with some sensors ([optical flow](https://kamathsblog.com/odometry-using-optical-flow), ToF array) and motors ([serial bus servo motors](https://kamathsblog.com/driving-serial-servo-motors))
+    
+* Finally, I dug into [VPNs for use with Fast DDS and ROS 2](https://kamathsblog.com/ros-2-and-vpns)
+    
+
 # Plans for 2024
 
-As the year comes to an end, there are a few things that I want to work on in 2024. I already wanted to spend some time with [ros2\_control](https://control.ros.org/master/index.html) and [Docker](https://www.docker.com/) this year but did not get much time due to other commitments, so they are at the top of my list. Next, I want to finish the AKROS2 Omni robot assembly, and then the software using my new ros2\_control skills, especially using the new hardware interface for the serial bus servo motors (WIP). For practicing ros2\_control, I also plan on building a small differential drive robot, just to test out the existing [differential drive controller](https://control.ros.org/master/doc/ros2_controllers/diff_drive_controller/doc/userdoc.html). Once this is done, I will then work on my own three omni-wheeled controller for the AKROS2 Omni robot.
+As the year comes to an end, there are a few things that I want to work on in 2024. I already wanted to spend some time with [ros2\_control](https://control.ros.org/master/index.html) and [Docker](https://www.docker.com/) this year but did not get much time due to other commitments, so they are at the top of my list. For practicing ros2\_control, I also plan on building a small differential drive robot, just to test out the existing [differential drive controller](https://control.ros.org/master/doc/ros2_controllers/diff_drive_controller/doc/userdoc.html). Once this is done, I will then work on my own three omni-wheeled controller for the AKROS2 Omni robot.
 
 Another thing that will carry forward to 2024 is the [webrtc\_ros](https://github.com/polyhobbyist/webrtc_ros) implementation. As I explained earlier, I now have a new camera on board the AKROS2 Mecanum robot, and I need webrtc\_ros for streaming the images from it. Additionally, I also want to move from [Fast DDS](https://www.eprosima.com/index.php/products-all/eprosima-fast-dds) to [Cyclone DDS](https://www.zettascale.tech/product/cyclone/) as it seems to reduce latency over distributed systems, especially for camera images.
 
@@ -184,11 +201,11 @@ Besides ros2\_control, Docker, webrtc\_ros and Cyclone DDS, I also plan to work 
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1703315404600/c13edfc9-c003-4872-96eb-cc7665f19c69.png align="center")
     
-* [Gazebo](https://gazebosim.org/home): Time to finally get started with Gazebo. The last time I used it was for my master thesis between 2016 and 2017 and I haven't touched it since. I want to implement Gazebo simulations for both the AKROS2 Mecanum and Omni robots.
+* [Gazebo](https://gazebosim.org/home): Time to finally get started with Gazebo. The last time I used it was for my master thesis between 2016 and 2017 and I haven't touched it since. I want to implement Gazebo simulations for at least one of my robots.
     
 * [Nav2](https://navigation.ros.org/): Same thing goes for Nav2. Once the control and simulation packages are done, time to implement the navigation stack for both Mecanum and Omni robots.
     
-* Fleet Management: Once I have both robots navigating autonomously, I want to control them together. For fleet management, I want to explore existing solutions like [Open-RMF](https://openrmf.readthedocs.io/en/latest/) but I would also like to take a shot at designing a solution myself. I think I'll eventually end up building on top of an existing open-source solution. I've already started reading [this multi-robot notebook by OSRF](https://osrf.github.io/ros2multirobotbook/) for this...
+* Fleet Management: For fleet management, I want to explore existing solutions like [Open-RMF](https://openrmf.readthedocs.io/en/latest/) but I would also like to take a shot at designing a solution myself. I think I'll eventually end up building on top of an existing open-source solution. I've already started reading [this multi-robot notebook by OSRF](https://osrf.github.io/ros2multirobotbook/) for this. I'm putting this on the 'nice to have' list as I don't think I'll end up with time to work on a robot fleet.
     
     ![](https://osrf.github.io/ros2multirobotbook/images/free_fleet_block_diagram.png align="center")
     
