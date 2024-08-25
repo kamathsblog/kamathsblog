@@ -1,4 +1,12 @@
-# Upgrading ROS 2, micro-ROS versions
+---
+title: "Upgrading ROS 2, micro-ROS versions"
+datePublished: Sun Feb 12 2023 16:23:37 GMT+0000 (Coordinated Universal Time)
+cuid: cleblm9qf00000al2a7xucf4u
+slug: upgrading-ros-2-micro-ros-versions
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1676823136093/bc242cd8-b415-40eb-bddc-ab2fd7ceff29.jpeg
+tags: migration, robotics, controllers, ros
+
+---
 
 Recently, I migrated the software stack of my robot from [ROS 2 Galactic](https://docs.ros.org/en/galactic/index.html) to [ROS 2 Humble](https://docs.ros.org/en/humble/index.html). I thought it was going to be straightforward - add my Galactic nodes to a new Humble workspace, compile and it will work right away. But I faced a few issues getting my nodes to compile, and in this article, I will detail these issues and how I fixed them.
 
@@ -21,6 +29,12 @@ SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip 
 ```
 
 This turned out to be a known issue, especially with the latest version of [setuptools](https://pypi.org/project/setuptools/), and the fix involved downgrading setuptools to version 58.2.0, the last version to work with ROS 2 without any warnings. The solution is detailed in [this ROS Answers post](https://answers.ros.org/question/396439/setuptoolsdeprecationwarning-setuppy-install-is-deprecated-use-build-and-pip-and-other-standards-based-tools/).
+
+**Update:** There's an alternative solution to this, where downgrading setuptools is not needed. [This warning can instead be suppressed](https://robotics.stackexchange.com/a/24349) by updating the `PYTHONWARNINGS`environment variable, which can be done by adding the following line to `~/.bashrc`:
+
+```bash
+PYTHONWARNINGS="ignore:setup.py install is deprecated::setuptools.command.install"; export PYTHONWARNINGS
+```
 
 Moving on to the next warning:
 
@@ -46,7 +60,7 @@ I haven't set up any unit testing for my nodes yet, but ever since I realized th
         
     * Launches the [T265 Tracking Camera](https://www.intelrealsense.com/tracking-camera-t265/) with the latest release of [realsense-ros](https://github.com/IntelRealSense/realsense-ros/releases/tag/4.51.1) (currently did not work on Galactic)
         
-    * Launches [akros2\_drive](https://github.com/adityakamath/akros2_drive) launch file
+    * Launches [akros2\_teleop](https://github.com/adityakamath/akros2_teleop) launch file
         
         * Launches the ds4\_driver node and reads inputs from the PS4 controller
             
@@ -71,7 +85,7 @@ Like ROS 2, [micro-ROS](https://micro.ros.org/) also has had a lot of changes be
 
 [I found out](https://github.com/micro-ROS/micro_ros_arduino/issues/1285) that now, the supported method for running micro-ROS on Teensy with Arduino used the [Arduino 2.0 IDE](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing) and [a different process to set up Teensyduino](https://www.pjrc.com/arduino-ide-2-0-0-teensy-support/). Once I set everything up, I was able to use the new Humble libraries. However, I had to comment out the [Parameter Server](https://micro.ros.org/docs/tutorials/programming_rcl_rclc/parameters/). The parameter server is initialized differently in micro-ROS Humble as compared to previous ROS 2 versions.
 
-I made the necessary changes according to the documentation, but I wasn't able to get it working. I was able to upload the code, but the microcontroller always went into the error loop, triggering the onboard LED to flash. After temporarily commenting out the parameter server, the remaining parts worked perfectly. So, when the akros2\_drive launch file is executed, the ds4\_driver reads joystick inputs and converts joystick inputs to twist messages, which the Teensy subscribes to in order to drive the motors.
+I made the necessary changes according to the documentation, but I wasn't able to get it working. I was able to upload the code, but the microcontroller always went into the error loop, triggering the onboard LED to flash. After temporarily commenting out the parameter server, the remaining parts worked perfectly. So, when the akros2\_teleop launch file is executed, the ds4\_driver reads joystick inputs and converts joystick inputs to twist messages, which the Teensy subscribes to in order to drive the motors.
 
 ### DS4 Driver troubles
 
