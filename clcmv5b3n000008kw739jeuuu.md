@@ -1,4 +1,12 @@
-# 2022: A year in review
+---
+title: "2022: A year in review"
+datePublished: Fri Jan 06 2023 04:15:52 GMT+0000 (Coordinated Universal Time)
+cuid: clcmv5b3n000008kw739jeuuu
+slug: 2022-a-year-in-review
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1673151112614/0f81a868-c651-4f67-a495-9ad190f282db.png
+tags: robotics, ros, 2022, 2022-year-in-review, micro-ros
+
+---
 
 I know it's quite late for this post, but it has certainly been difficult getting my head out of the holiday period. But it is high time I sit down and look back at the rollercoaster ride that was 2022. First, I must get myself a mug of [Bradley's No 29 tea](https://bradleys.nl/product/no-29green-white-tea-ginger-orange/), an amazing ginger and orange green tea, definitely one of my favorite finds of last year.
 
