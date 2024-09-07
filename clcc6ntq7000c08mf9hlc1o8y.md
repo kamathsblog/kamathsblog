@@ -1,5 +1,5 @@
 ---
-title: "ROSCon 2022 - Kyoto, Japan"
+title: "ROSCon 2022 - Kyoto 🇯🇵"
 datePublished: Wed Dec 28 2022 16:53:06 GMT+0000 (Coordinated Universal Time)
 cuid: clcc6ntq7000c08mf9hlc1o8y
 slug: roscon-2022-kyoto
