@@ -8,7 +8,7 @@ tags: robotics, controllers, ros, valve-steam-deck-gaming-console, valve-steam-d
 
 ---
 
-I first saw the [Steam Deck](https://store.steampowered.com/steamdeck) used as a robot controller during [ROSCon 2022](https://adityakamath.hashnode.dev/recap-roscon-2022-kyoto), where a some guys were driving around a robot dog using a Deck. Since then, I've been seeing a lot of other engineers using the Steam Deck as a robot controller. There have also been a few videos on YouTube by robotics creators like [Articulated Robotics](https://www.youtube.com/@ArticulatedRobotics) and [A PolyHobbyist](https://www.youtube.com/c/APolyhobbyist).
+I first saw the [Steam Deck](https://store.steampowered.com/steamdeck) used as a robot controller during [ROSCon 2022](https://adityakamath.hashnode.dev/recap-roscon-2022-kyoto), where some guys were driving around a robot dog using this hand-held gaming device. Since then, I've been seeing a lot of other engineers using the Steam Deck as a robot controller. There have also been a few videos on YouTube by robotics creators like [Articulated Robotics](https://www.youtube.com/@ArticulatedRobotics) and [A PolyHobbyist](https://www.youtube.com/c/APolyhobbyist).
 
 So, I decided to get myself one during the holidays. Fortunately, the prices for the [LCD variants](https://www.steamdeck.com/en/deck) have been dropped as they are phasing them out in favor of the new [OLED variants](https://www.steamdeck.com/en/oled). I got the 64GB variant and added a 512GB SD card to it.
 
@@ -72,7 +72,7 @@ While at it, I was also reminded that I will be working with [BehaviorTree.cpp](
 
 ## Driving AKROS2
 
-Now, that I can use the Steam Deck to visualize my robot's state remotely, the next step is to use the joysticks and buttons on the device to send commands to the robot.
+Now that I can use the Steam Deck to visualize my robot's state remotely, I will use the device's joysticks and buttons to send commands to the robot.
 
 ### Controller Mapping
 
@@ -169,7 +169,7 @@ With everything now set up, I then went on to try it with the AKROS2 mecanum rob
 
 ## Steam Deck Accessories
 
-Let's look at some of the accessories I added. They all have a utility, and have been really helpful so far. I had the following requirements:
+Let's look at some of the accessories I added. They all have a utility and have been really helpful so far. I had the following requirements:
 
 1. For when I'm on the go, some kind of kickstand attachment. It is annoying to see the screen when the device is laid flat.
     
