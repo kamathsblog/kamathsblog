@@ -17,7 +17,7 @@ As a bonus, the conference was organized in Kyoto, Japan. I've always wanted to 
 
 ## 19th October: Workshops
 
-I started the day with a coffee at perhaps one of the best [Starbucks](https://www.google.com/maps/place/Starbucks+Coffee+-+Kyoto+Karasuma-Rokkaku/@35.00758,135.7586584,18z/data=!3m1!5s0x60010885325b0c1d:0x73b2527a8e8758c0!4m9!1m2!2m1!1sStarbucks!3m5!1s0x60010885331bf779:0x16d8674e3a571648!8m2!3d35.0075801!4d135.7597954!15sCglTdGFyYnVja3MiA4gBAVoLIglzdGFyYnVja3OSAQtjb2ZmZWVfc2hvcOABAA) I have ever been to. I found it accidentally, after walking into a [beautiful temple](https://www.google.com/maps/place/Ch%C5%8Dh%C5%8D-ji+(Rokkaku-d%C5%8D)+Temple/@35.00746,135.7598936,19.67z/data=!3m1!5s0x60010885325b0c1d:0x73b2527a8e8758c0!4m12!1m6!3m5!1s0x60010885331bf779:0x16d8674e3a571648!2sStarbucks+Coffee+-+Kyoto+Karasuma-Rokkaku!8m2!3d35.0075801!4d135.7597954!3m4!1s0x0:0xc55a4b35e90756c8!8m2!3d35.0077132!4d135.7602563) on my way to the subway station. Right next to it was the coffee shop, with massive windows overlooking this temple. After the coffee, I took the subway to the conference venue.
+I started the day with a coffee at perhaps one of the best [Starbucks](https://www.google.com/maps/place/Starbucks+Coffee+-+Kyoto+Karasuma-Rokkaku/@35.00758,135.7586584,18z/data=!3m1!5s0x60010885325b0c1d:0x73b2527a8e8758c0!4m9!1m2!2m1!1sStarbucks!3m5!1s0x60010885331bf779:0x16d8674e3a571648!8m2!3d35.0075801!4d135.7597954!15sCglTdGFyYnVja3MiA4gBAVoLIglzdGFyYnVja3OSAQtjb2ZmZWVfc2hvcOABAA) I have ever been to. I found it accidentally, after walking into a [beautiful temple](https://www.google.com/maps/place/Ch%C5%8Dh%C5%8D-ji+\(Rokkaku-d%C5%8D\)+Temple/@35.00746,135.7598936,19.67z/data=!3m1!5s0x60010885325b0c1d:0x73b2527a8e8758c0!4m12!1m6!3m5!1s0x60010885331bf779:0x16d8674e3a571648!2sStarbucks+Coffee+-+Kyoto+Karasuma-Rokkaku!8m2!3d35.0075801!4d135.7597954!3m4!1s0x0:0xc55a4b35e90756c8!8m2!3d35.0077132!4d135.7602563) on my way to the subway station. Right next to it was the coffee shop, with massive windows overlooking this temple. After the coffee, I took the subway to the conference venue.
 
 ![One of the most beautiful Starbucks in Kyoto](https://cdn.hashnode.com/res/hashnode/image/upload/v1671975006425/ea4969b4-1566-42b8-8aa9-c90294e7d5ff.jpeg align="center")
 
@@ -49,7 +49,7 @@ After sitting through a couple more talks, I headed to the exhibition area to ta
 
 ![The Hello Robot platform](https://cdn.hashnode.com/res/hashnode/image/upload/v1671975165107/f905cb89-a497-4083-a3a7-93c9357aac74.jpeg align="center")
 
-%[https://youtube.com/shorts/UkKVncMAbMM?feature=share] 
+%[https://www.youtube.com/watch?v=UkKVncMAbMM] 
 
 I also learned a lot about the newest robots, tools, and technologies these companies were exhibiting and got a chance to even drive some of the robots on display. Next, it was time for lunch, where we were provided with an amazing bento box (I accidentally picked the vegetarian option, but it was still delicious), which we took outside to eat by the pond.
 
@@ -69,7 +69,7 @@ Before heading to a different hall for the Deployment track, I spent some more t
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672415722844/71eaa74c-e8cd-4901-915b-41618448b6df.jpeg align="center")
 
-%[https://www.youtube.com/shorts/_U4a-otfWu0] 
+%[https://www.youtube.com/watch?v=_U4a-otfWu0] 
 
 Next, I headed to the [Husarion](https://husarion.com/) booth, where they had their new Mecanum wheeled robot on display. They let me drive the robot, but I nearly crashed it thanks to their joystick configuration, which was inverted as compared to the configuration I normally use. I also had a nice chat with the team, who I realized were all from Krakow, and [AGH University of Science and Technology](https://www.agh.edu.pl/en/), where I interned for a couple of months back in 2012. Good to know that AGH is still coming up with some amazing robots and robotics companies.
 
@@ -89,7 +89,7 @@ Next, I wanted to sit through the session on ros2\_control, but then I saw a pos
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672427656733/6c6eaedb-2dcd-4413-84ed-aacd05eea90b.jpeg align="center")
 
-%[https://youtube.com/shorts/gRYHsQrEu0Y?feature=share] 
+%[https://www.youtube.com/watch?v=gRYHsQrEu0Y] 
 
 Finally, as the battery of the drone ran out, I headed back inside to listen to a talk about a real-life use case of ros2\_control with [MoveIt 2](https://moveit.picknik.ai/humble/index.html). The talk focused on how [Picknik Robotics](https://picknik.ai/) (the developers of [MoveIt](https://moveit.ros.org/)) helped an optics manufacturing company upgrade their robot with ROS 2 Drivers, and the challenges they faced along the way. It was nice to hear of an actual use case of ros2\_control after just learning how to use it just a day ago. Also nice to hear from a control engineer as most of the other talks seemed to be focused towards software engineers. The full video can be found below:
 
@@ -105,11 +105,11 @@ Finally, at the end of Day 1, all participants were asked to assemble for a grou
 
 On Day 2, I decided to skip a few of the morning sessions (I was aware of the contents of many of them, and as mentioned before, the [slides](http://download.ros.org/downloads/roscon/2022/) and [videos](https://vimeo.com/showcase/9954564) were going to be made available later). As I had a limited time in Kyoto, I decided to go on an early morning walk around the landmark historic areas of the city and click some photographs. I first went to [Kiyomizu-Dera](https://www.instagram.com/p/CkSkUm7qW9E/), walked down the beautiful [Ninenzaka](https://www.instagram.com/p/CkVmTNmqrxB/) street, and spent some time around the [Hokan-ji](https://www.instagram.com/p/CkbhfrAKxM_/) temple. Finally, I walked down to the [Gion area and Yasaka shrine](https://www.instagram.com/p/CkdvjqgKTXI/) as the shops were starting to open up, and I went to the [Nishiki market](https://www.instagram.com/p/CkgOE4SKNwr/) for some food and souvenir shopping. Here, I also found another temple hidden between shops and as I went in to explore, I found a dressed-up robot arm that read my fortune:
 
-%[https://youtube.com/shorts/7MchRV0bi68?feature=share] 
+%[https://www.youtube.com/watch?v=7MchRV0bi68] 
 
 I eventually headed back to the Kyoto International Conference Center to grab some lunch by the lake where we were surprised by [Formant's robot dog](https://formant.io/news-and-blog/2022/10/26/events/4-highlights-from-roscon-2022/) once again, who came by to show off some moves:
 
-%[https://youtube.com/shorts/NjtljF9-384?feature=share] 
+%[https://www.youtube.com/watch?v=NjtljF9-384] 
 
 Finally, after lunch, it was time to attend the track that I had been waiting eagerly for - the Navigation track. The first highlight for me was the talk about migrating from ROS 1 to ROS 2 by [Fetch Robotics](https://fetchrobotics.com/). This wasn't something entirely new for me, but the talk validated my own strategy for moving my robots from ROS 1 to ROS 2 - by migrating node by node and using [ros1\_bridge](https://github.com/ros2/ros1_bridge) so that ROS 1 and ROS 2 nodes worked together. However, this method has a few drawbacks, especially for complex node graphs, so the talk also focused on topic-by-topic migration and its advantages over node-by-node migration. This allows for incremental progress with very low overhead. It was nice to hear from the experiences of professionals in the robotics industry about their experiences and the challenges they faced along the way. I am looking forward to adopting some of these strategies in my own migration process. The full talk is embedded below:
 
