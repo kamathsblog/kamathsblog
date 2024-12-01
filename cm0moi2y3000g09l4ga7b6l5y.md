@@ -10,9 +10,9 @@ tags: robotics, controllers, ros, urdf, ros2
 
 Before I begin, note that this post follows an earlier article about [driving serial bus servo motors](https://kamathsblog.com/driving-serial-servo-motors), where I tried different things with the [Feetech STS3215](https://www.feetechrc.com/en/2020-05-13_56655.html) motors and their [SCServo\_Linux](https://github.com/adityakamath/SCServo_Linux/tree/main) C++ library. This was all in the context of the 3-wheeled omni robot I was working on. Eventually, I also managed to design a high-level controller to drive this robot and was able to control it using [ROS 2 Humble](https://docs.ros.org/en/humble/index.html).
 
-%[https://x.com/kamathsblog/status/1777073292865683632] 
+%[https://twitter.com/kamathsblog/status/1777073292865683632] 
 
-%[https://x.com/kamathsblog/status/1779237224434770352] 
+%[https://twitter.com/kamathsblog/status/1779237224434770352] 
 
 Eventually, I took a break from this robot (and other hobby projects) to focus on some innovative robotics projects at work. Honestly, it wasn't far off my hobby projects, as I ended up (re)using my AKROS2 mecanum robot's [ROS 2](https://github.com/adityakamath/akros2_base) / [micro-ROS](https://github.com/adityakamath/akros2_firmware) stack on the mecanum robot we were building for internal R&D. Once I completed this implementation, I was promoted to Product Owner in addition to my role as System Architect. This meant I wasn't doing much hands-on work anymore.
 
@@ -32,11 +32,11 @@ First, I calibrated the mid-points of the motors (see my earlier article on how 
 
 Next, I wrote a ROS 2 node ([command node](https://github.com/adityakamath/pan_tilt_ros/blob/humble/src/pan_tilt_cmd_node.cpp)) that subscribes to [Joy](https://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Joy.html) messages from a joystick, converts them to JointState messages based on a [configuration file](https://github.com/adityakamath/pan_tilt_ros/blob/humble/config/cmd_config.yaml), and publishes these messages for the control node to subscribe to. I tested this out with my trusty [Steam Deck](https://store.steampowered.com/steamdeck) and it works great as you can see in the thread below. To learn how to use the Steam Deck as a ROS robot controller, [check out my previous article](https://kamathsblog.com/steam-deck-as-a-robot-controller).
 
-%[https://x.com/kamathsblog/status/1784268248793399696] 
+%[https://twitter.com/kamathsblog/status/1784268248793399696] 
 
 During testing, I almost pinched my finger in the mechanism which led me to add an emergency stop button. This configurable button on the game controller (Steam Deck in my case) stops the motors and disables torque, allowing me to move the motors by hand. When the emergency stop is turned off, the motors return to the latest JointState message.
 
-%[https://x.com/kamathsblog/status/1784581818030739806] 
+%[https://twitter.com/kamathsblog/status/1784581818030739806] 
 
 **Pro tip**: use AI, especially with ROS! Since ROS is open-source and has a very active community, most AI tools are already trained with a lot of ROS code. All you need to do is design, and tools like [GitHub Copilot](https://github.com/features/copilot) or [Cursor](https://www.cursor.com/) can help write boilerplate code (don't trust them for anything more than this though) really well! I implemented the above prototype over a weekend, with a lot of time spent watching Netflix and going out with friends.
 
@@ -76,7 +76,7 @@ Eventually, we decided to use an [OAK-D Lite](https://shop.luxonis.com/products/
 
 This was a good decision since we were also using ROS 2 and had the same motors in our inventory. We didn't have some of the metal brackets, so the bottom and camera mounts are entirely 3D printed, as shown in the image above. Another key difference is that the mechanism is mounted to the robot enclosure, while my project uses a tripod. This means the only change in the software stack is the URDF. Here's a video of this pan-tilt camera module in action:
 
-%[https://x.com/kamathsblog/status/1789248060960235924] 
+%[https://twitter.com/kamathsblog/status/1789248060960235924] 
 
 ### ST3215 Variants
 
@@ -98,7 +98,7 @@ Additionally, they sell their own [pan-tilt camera module](https://www.waveshare
 
 Speaking of arms, we are also working towards adding a small robot arm on the Arvatar mecanum robot. Since we had these amazing motors from Waveshare, we decided to build the arm entirely out of them. We have prototyped the arm, and are currently designing the wrist and gripper mechanisms, and initial testing shows some promising results. This low-cost robot arm is expected to have a BOM cost of less than 200 Euros, and we plan on open sourcing the design once ready. More on this soon, but for now, here's how the arm looks:
 
-%[https://x.com/kamathsblog/status/1811883637710655907] 
+%[https://twitter.com/kamathsblog/status/1811883637710655907] 
 
 ### Open-Source Humanoid
 
@@ -108,15 +108,15 @@ One of my favorite ST3215-based robots is the RX1 Humanoid by [Red Rabbit Roboti
 
 I've been following the progress of the RX1 humanoid through its creator [Lethic's Twitter](https://x.com/lethic1) account. When he [open-sourced its actuator design](https://www.redrabbitrobotics.cc/rx1-humanoid-servo-opensourced/), I decided to use my last two spare STS3215 motors and built my own over a weekend. Check out the results in this Twitter thread:
 
-%[https://x.com/kamathsblog/status/1812489036964995562] 
+%[https://twitter.com/kamathsblog/status/1812489036964995562] 
 
 ## Next Up
 
-Next, I want to write a post about my experiences at RoboCup 2024 in Eindhoven. I had an amazing time there and saw more robots than ever before. I've shared many pictures on Twitter, but I can't wait to write about them in detail.
+<s>Next, I want to write a post about my experiences at RoboCup 2024 in Eindhoven. I had an amazing time there and saw more robots than ever before. I've shared many pictures on Twitter, but I can't wait to write about them in detail.</s> Update: I am too lazy to write a long post, but have a look at my Twitter threads about my experiences..
 
 %[https://x.com/kamathsblog/status/1813922132226884089] 
 
-%[https://x.com/kamathsblog/status/1814997023466098813] 
+%[https://twitter.com/kamathsblog/status/1814997023466098813] 
 
 I recently purchased my first MacOS device - a Macbook Pro. Funnily enough, I received it the day the CrowdStrike issue happened, which made me feel super lucky. Its a gorgeous device, but compared to Windows, it does have some limitations - especially when it comes to installing ROS 2. Although it's technically possible to [install it from source](https://docs.ros.org/en/jazzy/Installation/Alternatives/macOS-Development-Setup.html), I haven't heard of anyone using this method without any issues. Instead, I decided to run ROS 2 using Docker, using this [excellent blog post by Sebastian Castro aka Robotic Sea Bass](https://roboticseabass.com/2023/07/09/updated-guide-docker-and-ros2/). While this worked very well, I also stumbled upon [Pixi](https://pixi.sh/latest/), a package manager by [Prefix.dev](https://prefix.dev/). It's an amazing tool so far, and I plan on experimenting a bit more with it and will write a blog post in the coming months.
 
