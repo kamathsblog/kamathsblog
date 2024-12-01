@@ -194,7 +194,7 @@ A feature that allows you to select a sensor event, like an unusual IMU reading,
 
 ### AgileX
 
-[AgileX](https://global.agilex.ai/), a company I had only known for their incredible mobile robots, showcased their new product - a low-cost, light-weight 6dof robot arm called [PiPER](https://global.agilex.ai/products/piper) capable of handling a payload of 1.5kg. They demonstrated it in a leader-follower setup, and it was one of the smoothest demos I've ever experienced! They are selling it for 2,500 USD, which is much more affordable than similar arms from other companies. Since it also has interfaces to ROS, it's likely one of the best platforms available for hobby and research projects. I can't wait to see the projects that are built on this platform!
+[AgileX](https://global.agilex.ai/), a company I had only known for their incredible mobile robots, showcased their new product - a low-cost, lightweight 6dof robot arm called [PiPER](https://global.agilex.ai/products/piper) capable of handling a payload of 1.5kg. They demonstrated it in a leader-follower setup, and it was one of the smoothest demos I've ever experienced! They are selling it for 2,500 USD, which is much more affordable than similar arms from other companies. Since it also has interfaces to ROS, it's likely one of the best platforms available for hobby and research projects. I can't wait to see the projects that are built on this platform!
 
 %[https://twitter.com/kamathsblog/status/1848856780526490039] 
 
