@@ -116,13 +116,13 @@ There are two things I want to accomplish next:
 
 Meanwhile, there's a second robot I'm working on. So far I've only managed to run some LED sequences and an example of [Uncanny Eyes](https://github.com/adafruit/Uncanny_Eyes) on the [Wio Terminal](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/).
 
-%[https://www.youtube.com/shorts/tuPxhawaxes] 
+%[https://www.youtube.com/watch?v=tuPxhawaxes] 
 
-%[https://www.youtube.com/shorts/kOFKQO0oR54] 
+%[https://www.youtube.com/watch?v=kOFKQO0oR54] 
 
-%[https://www.youtube.com/shorts/c1lq1oFbpxc] 
+%[https://www.youtube.com/watch?v=c1lq1oFbpxc] 
 
-If you've been following my progress on [Twitter](https://twitter.com/kamathsblog), I first planned on using the [Arduino Nano RP2040 Connect](https://docs.arduino.cc/hardware/nano-rp2040-connect), but I have now switched to the Wio Terminal. It has got an IMU and a microphone just like the RP2040 Connect, but also a screen, buttons, and a speaker. I'm also using the [Wio Terminal Battery Chassis (650 mAh)](https://wiki.seeedstudio.com/Wio-Terminal-Chassis-Battery(650mAh)/) which also extends the number of Grove connectors and works perfectly with the Grove-based LED strips. Bonus: the Wio Terminal can also run micro-ROS!
+If you've been following my progress on [Twitter](https://twitter.com/kamathsblog), I first planned on using the [Arduino Nano RP2040 Connect](https://docs.arduino.cc/hardware/nano-rp2040-connect), but I have now switched to the Wio Terminal. It has got an IMU and a microphone just like the RP2040 Connect, but also a screen, buttons, and a speaker. I'm also using the [Wio Terminal Battery Chassis (650 mAh)](https://wiki.seeedstudio.com/Wio-Terminal-Chassis-Battery\(650mAh\)/) which also extends the number of Grove connectors and works perfectly with the Grove-based LED strips. Bonus: the Wio Terminal can also run micro-ROS!
 
 %[https://twitter.com/K66941741/status/1604849092483776512] 
 
