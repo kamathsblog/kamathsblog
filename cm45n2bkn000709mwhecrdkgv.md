@@ -216,7 +216,7 @@ Next, we attended the after-party organized by the [Odense municipality](https:/
 
 %[https://www.youtube.com/watch?v=W99sNQdHqkM] 
 
-### Summary
+## Summary
 
 It was wonderful to meet so many people I had only interacted with on social media, and it was great to see that they were just as amazing in person as they are online. As a hobbyist, I got to talk with many others like me who not only work with robots professionally but also spend their spare time building hobby projects and contributing to this amazing community. Besides talking about robotics, I also had the chance to chat with people about other topics, like photography, trips to [Lego House](https://legohouse.com/en-gb/), and even the best [smørrebrød](https://nl.wikipedia.org/wiki/Sm%C3%B8rrebr%C3%B8d) places in the neighborhood, some of which I got to try during my stay in Odense.
 
