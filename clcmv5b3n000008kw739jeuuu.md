@@ -90,7 +90,7 @@ The next project is to work on a micro-ROS robot. Last year, I also spent some s
 
 Unlike previous years, I don't want to over-estimate things and will limit myself to these two technical projects (alongside fixing up the apartment). Just like last year, I expect to have a few (unplanned) side quests along the way, and I will write about them when the time comes. That said, I will continue blogging about my experiences - the only change being that it will be here on [Hashnode](https://adityakamath.hashnode.dev/), rather than on [GitHub pages](https://adityakamath.github.io/). My old blog is archived for posterity and will remain on GitHub pages since I'm too lazy to migrate (and fix) these posts to Hashnode.
 
-%[https://adityakamath.hashnode.dev] 
+%[https://kamathsblog.com/] 
 
 Finally, after the ROSCon 2022 experience, I have plans to visit another robotics conference this year. [ROSCon 2023](https://10times.com/e1zp-zf3g-9d39) is happening in the USA, and I will not be able to attend. So, I will instead try to visit [ICRA 2023](https://www.icra2023.org/) in London in May. I also intend on visiting another Asian country this year before going on another trip to India. My current plans are for a return trip to Japan, but this might change - I've also heard good things about Vietnam...
 
