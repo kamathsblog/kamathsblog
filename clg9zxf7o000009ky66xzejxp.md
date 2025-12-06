@@ -4,7 +4,6 @@ datePublished: Thu Apr 06 2023 22:47:11 GMT+0000 (Coordinated Universal Time)
 cuid: clg9zxf7o000009ky66xzejxp
 slug: micro-ros-parameter-server
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1681080345841/cb9eb2ab-2268-4293-940d-75e2e2f6fed0.jpeg
-tags: robotics, ros, micro-ros, ros2, ros-2
 
 ---
 
