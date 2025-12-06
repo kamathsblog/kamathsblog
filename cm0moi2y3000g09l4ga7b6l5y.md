@@ -4,7 +4,6 @@ datePublished: Fri Aug 30 2024 22:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: cm0moi2y3000g09l4ga7b6l5y
 slug: building-a-pan-tilt-mechanism
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1725116366054/579d6d11-bdfc-407f-900f-7ee214fd4f7a.jpeg
-tags: robotics, controllers, ros, urdf, ros2
 
 ---
 
