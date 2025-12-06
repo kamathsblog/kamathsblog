@@ -4,7 +4,6 @@ datePublished: Sun Jul 23 2023 19:29:35 GMT+0000 (Coordinated Universal Time)
 cuid: clkfu26hg000309l8deyhgshk
 slug: upgrading-my-prusa-mini
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/drTIJgAc58w/upload/260a4916ee134065cb80362eb159bf5b.jpeg
-tags: 3d-printing, prusa, prusa-mini, octoprint, octopi
 
 ---
 
