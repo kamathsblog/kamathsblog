@@ -4,7 +4,6 @@ datePublished: Sun Dec 01 2024 13:30:09 GMT+0000 (Coordinated Universal Time)
 cuid: cm45n2bkn000709mwhecrdkgv
 slug: roscon-2024-odense
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1730718156781/21d316a8-7a63-49f4-ac6e-7c624c33841e.jpeg
-tags: conference, robotics, ros, roscon
 
 ---
 
