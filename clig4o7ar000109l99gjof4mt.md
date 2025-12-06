@@ -4,7 +4,6 @@ datePublished: Sat Jun 03 2023 15:07:14 GMT+0000 (Coordinated Universal Time)
 cuid: clig4o7ar000109l99gjof4mt
 slug: odometry-using-optical-flow
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1685800724354/89aebdd0-006f-4a47-bd14-43d77658e122.jpeg
-tags: robotics, ros, ros2, optical-flow, odometry
 
 ---
 
