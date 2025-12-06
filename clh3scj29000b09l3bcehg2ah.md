@@ -4,7 +4,6 @@ datePublished: Wed Apr 26 2023 19:08:54 GMT+0000 (Coordinated Universal Time)
 cuid: clh3scj29000b09l3bcehg2ah
 slug: visualizing-robots-in-unity
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1682720555965/14d2e89c-a75e-4a72-8148-d7ffee71367d.jpeg
-tags: unity, robotics, unity3d, ros, ros2
 
 ---
 
