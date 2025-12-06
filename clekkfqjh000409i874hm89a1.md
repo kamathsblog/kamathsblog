@@ -4,7 +4,6 @@ datePublished: Fri Feb 17 2023 23:00:15 GMT+0000 (Coordinated Universal Time)
 cuid: clekkfqjh000409i874hm89a1
 slug: teleop-with-game-controllers
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1677277258640/86d4bc77-02ee-409c-9ff7-622b3deb8922.jpeg
-tags: robotics, controllers, ros, ros2
 
 ---
 
