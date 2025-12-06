@@ -5,7 +5,6 @@ cuid: clcc6ntq7000c08mf9hlc1o8y
 slug: roscon-2022-kyoto
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1672070974021/457f3d3b-e474-4287-b294-77855b8ef016.jpeg
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1672505566861/c8229192-4144-40ae-9b0b-4342340c69f9.jpeg
-tags: robotics, ros, roscon
 
 ---
 
