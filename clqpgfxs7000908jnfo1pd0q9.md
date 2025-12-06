@@ -1,6 +1,6 @@
 ---
 title: "2023: A year in review"
-datePublished: Thu Dec 28 2023 17:04:18 GMT+0000 (Coordinated Universal Time)
+datePublished: Sun Dec 31 2023 23:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: clqpgfxs7000908jnfo1pd0q9
 slug: last-update-of-2023
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1702559058546/16f7958a-f579-46a7-81ab-dcedcb2d46cd.png
