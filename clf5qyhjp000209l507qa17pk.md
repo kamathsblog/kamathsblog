@@ -4,7 +4,6 @@ datePublished: Sun Mar 05 2023 18:46:09 GMT+0000 (Coordinated Universal Time)
 cuid: clf5qyhjp000209l507qa17pk
 slug: updating-the-robot-description
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1678645312248/df0aeb28-113c-4811-8281-668d6514e1cb.jpeg
-tags: robotics, ros, micro-ros, urdf, ros2
 
 ---
 
