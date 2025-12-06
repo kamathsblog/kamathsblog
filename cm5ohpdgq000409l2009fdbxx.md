@@ -4,7 +4,6 @@ datePublished: Tue Dec 31 2024 23:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: cm5ohpdgq000409l2009fdbxx
 slug: 2024-a-year-in-review
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1736040990505/96d74763-b209-47b7-ae6b-b54c69009de5.jpeg
-tags: robotics, review, ros, 2024
 
 ---
 
