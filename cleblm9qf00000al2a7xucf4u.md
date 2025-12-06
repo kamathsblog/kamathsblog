@@ -4,7 +4,6 @@ datePublished: Sun Feb 12 2023 16:23:37 GMT+0000 (Coordinated Universal Time)
 cuid: cleblm9qf00000al2a7xucf4u
 slug: upgrading-ros-2-micro-ros-versions
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1676823136093/bc242cd8-b415-40eb-bddc-ab2fd7ceff29.jpeg
-tags: migration, robotics, controllers, ros
 
 ---
 
