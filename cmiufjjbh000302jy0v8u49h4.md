@@ -4,7 +4,6 @@ datePublished: Tue Dec 02 2025 23:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: cmiufjjbh000302jy0v8u49h4
 slug: roscon-2025-singapore
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1762687247289/44fbce7b-b527-49ee-a2f0-8fcc24dfd5ba.png
-tags: conference, robotics, ros, singapore, roscon, ros2, ros-2
 
 ---
 
