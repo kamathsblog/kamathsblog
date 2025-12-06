@@ -4,7 +4,6 @@ datePublished: Sun Jan 14 2024 00:38:13 GMT+0000 (Coordinated Universal Time)
 cuid: clrcrpanx000509l78gjd65l2
 slug: steam-deck-as-a-robot-controller
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1705171707263/8a7cb151-8a14-4dad-aeb5-edec91f25774.jpeg
-tags: robotics, controllers, ros, valve-steam-deck-gaming-console, valve-steam-deck-handheld-gaming-console, ros2
 
 ---
 
