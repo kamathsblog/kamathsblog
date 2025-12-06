@@ -4,7 +4,6 @@ datePublished: Wed Sep 24 2025 11:53:45 GMT+0000 (Coordinated Universal Time)
 cuid: cmfxxecez000002kv9ok2eaq8
 slug: retiring-the-akros-platform
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1758714789164/47ab65c8-6044-4fa3-9bf2-6b154faa83e0.jpeg
-tags: blogging, robotics, build, ros, build-in-public, ros2
 
 ---
 
