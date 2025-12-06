@@ -4,7 +4,6 @@ datePublished: Sun Jun 11 2023 16:04:05 GMT+0000 (Coordinated Universal Time)
 cuid: clirm84ji000009ladesh1v8e
 slug: driving-serial-servo-motors
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1686493962375/1cd29345-903d-4b22-99c6-612794fa2d5b.jpeg
-tags: cpp, asynchronous, robotics, servo-motors, synchronization
 
 ---
 
