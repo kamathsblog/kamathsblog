@@ -1,5 +1,5 @@
 ---
-title: "Serial Bus Servo Motors in 2025"
+title: "Serial Bus Servo Motors (2025)"
 datePublished: Fri Dec 26 2025 23:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: cmjpvu1z6000e02kx3nmbelxp
 slug: serial-bus-servo-motors-in-2025
