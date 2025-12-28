@@ -1,5 +1,5 @@
 ---
-title: "Driving Serial Servo Motors"
+title: "Serial Bus Servo Motors"
 datePublished: Sun Jun 11 2023 16:04:05 GMT+0000 (Coordinated Universal Time)
 cuid: clirm84ji000009ladesh1v8e
 slug: driving-serial-servo-motors
