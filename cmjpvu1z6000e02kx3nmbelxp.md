@@ -4,7 +4,6 @@ datePublished: Fri Dec 26 2025 23:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: cmjpvu1z6000e02kx3nmbelxp
 slug: serial-bus-servo-motors-in-2025
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1766256960043/dc66e725-cf4e-4d15-bd59-8b5fd7c03597.jpeg
-tags: cpp, sdk, servo, actuator, motor, ros2
 
 ---
 
