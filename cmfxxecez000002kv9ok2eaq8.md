@@ -90,16 +90,16 @@ That said, here’s a list of my build logs (at least the ones I’ve been able 
 
 %[https://adityakamath.github.io/2022-09-04-akros2-drive-and-bringup/] 
 
-%[https://kamathsblog.com/2022-a-year-in-review] 
+%[https://kamathrobotics.com/2022-a-year-in-review] 
 
-%[https://kamathsblog.com/upgrading-ros-2-micro-ros-versions] 
+%[https://kamathrobotics.com/upgrading-ros-2-micro-ros-versions] 
 
-%[https://kamathsblog.com/teleop-with-game-controllers] 
+%[https://kamathrobotics.com/teleop-with-game-controllers] 
 
-%[https://kamathsblog.com/updating-the-robot-description] 
+%[https://kamathrobotics.com/updating-the-robot-description] 
 
-%[https://kamathsblog.com/micro-ros-parameter-server] 
+%[https://kamathrobotics.com/micro-ros-parameter-server] 
 
-%[https://kamathsblog.com/visualizing-robots-in-unity] 
+%[https://kamathrobotics.com/visualizing-robots-in-unity] 
 
-%[https://kamathsblog.com/steam-deck-as-a-robot-controller]
+%[https://kamathrobotics.com/steam-deck-as-a-robot-controller]
