@@ -3,7 +3,7 @@ title: "2022: A year in review"
 datePublished: Sun Jan 01 2023 04:15:52 GMT+0000 (Coordinated Universal Time)
 cuid: clcmv5b3n000008kw739jeuuu
 slug: 2022-a-year-in-review
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1673151112614/0f81a868-c651-4f67-a495-9ad190f282db.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1767826829974/64b34f6f-3408-451e-bfff-7ceb32a816f3.png
 
 ---
 
