@@ -39,8 +39,6 @@ The documentation led me to [this repository on Gitee](https://gitee.com/ftservo
 
 I started by downloading the [latest zip file](https://gitee.com/ftservo/SCServoSDK/blob/master/SCServo_Linux_220329.7z) of the package from Gitee, extracting the C++ libraries to the Raspberry Pi, and building and trying out the provided examples. The provided examples work very well, and there also seems to be enough documentation within the code. The documentation is all in Chinese but can be easily translated by any online service, which is sufficient for now. There are also a few videos on YouTube but also in Chinese.
 
-%[https://www.youtube.com/watch?v=wN2-958Oi8A] 
-
 The **SCServo\_Linux** package provides libraries for different series of servos from Feetech, but for this weekend's project, I only looked at the library for the [SMS/STS series](https://www.feetechrc.com/serial-port-series-steering-gear.html) of motors, which the STS3215 is a part of.
 
 This library lacks some of the advertised functionalities of the motor. [This link](https://www.feetechrc.com/en/2020-05-13_56655.html) to the product page shows that the motor can operate in 4 modes:
