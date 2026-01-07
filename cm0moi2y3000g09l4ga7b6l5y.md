@@ -113,7 +113,7 @@ I've been following the progress of the RX1 humanoid through its creator [Lethic
 
 <s>Next, I want to write a post about my experiences at RoboCup 2024 in Eindhoven. I had an amazing time there and saw more robots than ever before. I've shared many pictures on Twitter, but I can't wait to write about them in detail.</s> Update: I am too lazy to write a long post, but have a look at my Twitter threads about my experiences..
 
-%[https://x.com/kamathsblog/status/1813922132226884089] 
+%[https://twitter.com/kamathsblog/status/1813922132226884089] 
 
 %[https://twitter.com/kamathsblog/status/1814997023466098813] 
 
