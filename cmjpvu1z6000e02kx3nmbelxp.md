@@ -9,7 +9,7 @@ cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1766256960043/dc66e72
 
 It's been a few years since I last touched [SCServo\_Linux](https://github.com/adityakamath/SCServo_Linux), my fork of the C++ SDK to control [Feetech](https://www.feetechrc.com/)’s range of serial-bus servo motors, and because of some recently started projects, I finally got around to making some long-overdue improvements. What began as "let me see if this repo still works" turned into a deep dive into eliminating duplicate code and properly documenting a codebase that was mostly in Chinese. So, I decided to document my process in this blog.
 
-## The backstory: From 2023 to now
+# The backstory: From 2023 to now
 
 [I last wrote](https://kamathsblog.com/driving-serial-servo-motors) about Feetech's [STS3215](https://www.feetechrc.com/2020-05-13_56655.html) motors and SCServo\_Linux back in June 2023, having purchased them in 2022. These motors have gained significant popularity since then, thanks to projects like [LeRobot](https://huggingface.co/docs/lerobot/en/index) and the [SO-100](https://huggingface.co/docs/lerobot/en/so100) (and its successor, the [SO-101](https://huggingface.co/docs/lerobot/en/so101)) robot arm. However, back then, I was unaware of anyone outside Asia using them. The motors had already been out for two years, but documentation was scattered across forums, blogs, and Feetech's website, almost entirely in Chinese. After struggling with translations and mistranslations (thanks, Google Translate), I decided to fix it for myself.
 
@@ -29,11 +29,11 @@ After attending this year’s [ROSCon](https://roscon.ros.org/2025/), I came awa
 
 This got me working with my old SCServo\_Linux repository, and I realized just how much it needed some love. The code worked fine for basic testing, but it needed some cleanup - code enhancements and better documentation.
 
-## Understanding Feetech's servo lineup
+# Understanding Feetech's servo lineup
 
 Before diving into the refactoring work, it's important to understand what these motors are and why they're becoming popular in robotics projects.
 
-### Motor types
+## Motor types
 
 [Feetech](https://www.feetechrc.com/) is a Chinese company that manufactures various types of serial-bus servo motors, each with distinct communication protocols. I will focus on the STS series in this article, as the STS3215 motors I’m using fall into this category:
 
@@ -59,7 +59,7 @@ While the LeKiwi platform and both the SO arms use STS3215 servos throughout, th
 
 ⚠️ ***Bus compatibility:*** *You generally can't mix different motor series on the same serial bus. The STS3215 motors on my LeKiwi and SO-100 arms all use the same protocol and baud rate (1M), so they work together fine. But mixing, say, STS motors with SCS motors on one bus likely won't work - different protocols, different baud rates, different memory maps. Even different STS motor variants (different models, voltage limits on the same bus might cause issues. Incompatibility issues mostly end up with burnt motors or drivers (I’ve experienced this myself), so proceed with caution.*
 
-### STS3215 operating modes
+## STS3215 operating modes
 
 What makes these STS3215 servos interesting for robotics, besides an excellent build quality, is their flexibility. They can be operated in different modes:
 
@@ -79,7 +79,7 @@ What makes these STS3215 servos interesting for robotics, besides an excellent b
 
 These modes are specifically for the STS series, as other series have slightly different operating modes. For example, HLS series motors do not have mode 3, and mode 2 is a torque control mode instead of PWM. The SCS series motors have only two modes, servo (mode 0) and PWM (mode 1). The SCServo\_Linux SDK handles (most of) these modes across all four protocols (SMS, STS, SCS, HLS), which is where issues like code duplication, inconsistent error handling, and the lack of documentation became clear.
 
-## The starting point
+# The starting point
 
 I didn’t have to fix these issues; the original SDK from Feetech and my 2-year-old fork worked well when I tested it, but I decided to make a (heavily AI-assisted) weekend project out of this.
 
@@ -107,7 +107,7 @@ The updated documentation made it easier to understand what’s happening in the
 
 Besides refactoring the source code, I also updated the [examples](https://github.com/adityakamath/SCServo_Linux/tree/main/examples), both the original set provided by Feetech and my own, in a [sandbox](https://github.com/adityakamath/SCServo_Linux/tree/main/examples/sandbox) folder. With the source code and examples cleaned up and the documentation in place, I went back through my workflow to update the documentation to reflect the refactored code.
 
-## What I Learned
+# What I Learned
 
 I understand the debate about AI, and it’s not always reliable, but for a side project I pursue on weekends, it has honestly made my life significantly better. Especially as a mechatronics/robotics engineer, with an interest in software but frustration with the actual software development process, AI tools like Claude Code take away a lot of the burden. And since I work with many open-source projects, it is much more reliable than with proprietary software, as many of these models are already trained on publicly available repositories.
 
@@ -115,7 +115,7 @@ However, I can't just tell Claude what to do and then walk away; it needs to be 
 
 The key is treating AI agents as "coding/refactoring assistants" rather than a "magic translator" - you still need to review and verify. Note that this AI-assisted process works best when there's an existing codebase that simply needs some refactoring and documentation. Having the existing context reduces the risk of hallucinations.
 
-## Try it out
+# Try it out
 
 The updated SCServo\_Linux SDK is on GitHub at [adityakamath/SCServo\_Linux](https://github.com/adityakamath/SCServo_Linux), and the AI-generated documentation can be found in the `with_ai_docs` branch.
 
@@ -125,7 +125,7 @@ If you're working with the STS series servos or have an SCS, SMS, or HLS series 
 
 ⚠️ ***Try it at your own risk:*** *the majority of this repository is untested since I do not have the correct motors. Even for the STS series, I have only tested it with the 12V and 7.4V STS3215 variant. Proceed with caution when using untested motors.*
 
-## LeKiwi hardware updates
+# LeKiwi hardware updates
 
 While working on the software, I also made some hardware changes for the LeKiwi robot. After assembling it a few weeks ago, I ended up switching from the [SeeedStudio servo driver board](https://www.seeedstudio.com/Bus-Servo-Driver-Board-for-XIAO-p-6413.html) that the kit came with to the [Waveshare control board](https://www.waveshare.com/bus-servo-adapter-a.htm) that the original LeKiwi design uses. I had a few Waveshare boards in stock, and it turned out to be a better fit. There were a few major issues with SeeedStudio’s board, about which I will be writing in another post. For now, I'll just say that the Waveshare board is more reliable and easier to work with thanks to its up-to-date documentation.
 
@@ -139,7 +139,7 @@ I then attached a [2D LiDAR](https://gibbard.me/lidar/) and a [camera](https://w
 
 I first want to develop the motion control software for the base using ROS 2, and integrate the ROS packages for the camera and the LiDAR. I eventually want to integrate it with a navigation stack like [Nav2](https://docs.nav2.org/) or [EasyNav](https://easynavigation.github.io/), but I am also quite interested in [embodied AI applications with ROS](https://github.com/ros-physical-ai/demos). I’ve got a lot of time to decide which path to take.
 
-## What's Next?
+# What's Next?
 
 The SCServo\_Linux C++ SDK is now in good shape, but there are indeed some improvements that could be made, but I will leave it at that for now. My next focus is on using this SDK to integrate the LeKiwi robot base with ROS 2.
 
