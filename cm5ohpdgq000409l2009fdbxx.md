@@ -37,9 +37,7 @@ Meanwhile, I also began working on another innovation project for the business s
 
 ## Pan-Tilt mechanism with ROS
 
-In spring, I decided to build a small hobby project with [STS3215](https://www.feetechrc.com/2020-05-13_56655.html)/[ST3215](https://www.waveshare.com/st3215-servo.htm) motors. We wanted to use the same motors for the Arvatar arm and I had a few that I wasn’t using. So, I decided to build a little [pan-tilt mechanism and control it using ROS 2](https://github.com/adityakamath/pan_tilt_ros), as a starting point for the Arvatar arm software stack. As you can see in the blog post below, this mechanism was then replicated for use on the Arvatar rover with an [OAK-D lite](https://shop.luxonis.com/products/oak-d-lite-1?srsltid=AfmBOors7DgMtFAim2XYm9W90Eg-IJSbnGTGmibVGnc13IyNJBAgB8gQ) camera so that it can imitate the head movements of the VR headset user and provide a more immersive experience. This was a fun little project.
-
-%[https://kamathrobotics.com/building-a-pan-tilt-mechanism] 
+In spring, I decided to build a small hobby project with [STS3215](https://www.feetechrc.com/2020-05-13_56655.html)/[ST3215](https://www.waveshare.com/st3215-servo.htm) motors. We wanted to use the same motors for the Arvatar arm and I had a few that I wasn’t using. So, I decided to build a little [pan-tilt mechanism and control it using ROS 2](https://github.com/adityakamath/pan_tilt_ros), as a starting point for the Arvatar arm software stack. As you can see in the blog post below, this mechanism was then replicated for use on the Arvatar rover with an [OAK-D lite](https://shop.luxonis.com/products/oak-d-lite-1?srsltid=AfmBOors7DgMtFAim2XYm9W90Eg-IJSbnGTGmibVGnc13IyNJBAgB8gQ) camera so that it can imitate the head movements of the VR headset user and provide a more immersive experience. This was a fun little project, and you can read more about it [on my blog post here](https://kamathrobotics.com/building-a-pan-tilt-mechanism).
 
 ## RoboCup 2024 Eindhoven 🇳🇱
 
