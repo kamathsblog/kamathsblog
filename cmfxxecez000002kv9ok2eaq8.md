@@ -90,39 +90,18 @@ That said, here’s a list of my build logs (at least the ones I’ve been able 
 
 %[https://adityakamath.github.io/2022-09-04-akros2-drive-and-bringup/] 
 
-Around this time, I transitioned from GitHub Pages to Hashnode, a more convenient blogging platform. Unfortunately, I’ve been unable to embed Hashnode links here, so here is a list of the AKROS related blogs on the new platform:
+Around this time, I transitioned from GitHub Pages to Hashnode, a more convenient blogging platform. Unfortunately, I’ve been unable to embed Hashnode links here, so here is a list of the AKROS-related blogs on the new platform:
 
-<div data-node-type="callout">
-<div data-node-type="callout-emoji">🤖</div>
-<div data-node-type="callout-text"><a target="_self" rel="noopener noreferrer nofollow" href="https://kamathrobotics.com/2022-a-year-in-review" style="pointer-events: none">2022: A year in review</a></div>
-</div>
-
-<div data-node-type="callout">
-<div data-node-type="callout-emoji">🤖</div>
-<div data-node-type="callout-text"><a target="_self" rel="noopener noreferrer nofollow" href="https://kamathrobotics.com/upgrading-ros-2-micro-ros-versions" style="pointer-events: none">Upgrading ROS 2, micro-ROS versions</a></div>
-</div>
-
-<div data-node-type="callout">
-<div data-node-type="callout-emoji">🤖</div>
-<div data-node-type="callout-text"><a target="_self" rel="noopener noreferrer nofollow" href="https://kamathrobotics.com/teleop-with-game-controllers" style="pointer-events: none">Teleop with Game Controllers</a></div>
-</div>
-
-<div data-node-type="callout">
-<div data-node-type="callout-emoji">🤖</div>
-<div data-node-type="callout-text"><a target="_self" rel="noopener noreferrer nofollow" href="https://kamathrobotics.com/updating-the-robot-description" style="pointer-events: none">Updating the Robot Description</a></div>
-</div>
-
-<div data-node-type="callout">
-<div data-node-type="callout-emoji">🤖</div>
-<div data-node-type="callout-text"><a target="_self" rel="noopener noreferrer nofollow" href="https://kamathrobotics.com/micro-ros-parameter-server" style="pointer-events: none">Micro-ROS Parameter Server</a></div>
-</div>
-
-<div data-node-type="callout">
-<div data-node-type="callout-emoji">🤖</div>
-<div data-node-type="callout-text"><a target="_self" rel="noopener noreferrer nofollow" href="https://kamathrobotics.com/visualizing-robots-in-unity" style="pointer-events: none">Visualizing Robots in Unity</a></div>
-</div>
-
-<div data-node-type="callout">
-<div data-node-type="callout-emoji">🤖</div>
-<div data-node-type="callout-text"><a target="_self" rel="noopener noreferrer nofollow" href="https://kamathrobotics.com/steam-deck-as-a-robot-controller" style="pointer-events: none">Steam Deck as a Robot Controller</a></div>
-</div>
+* [2022: A year in review](https://kamathrobotics.com/2022-a-year-in-review)
+    
+* [Upgrading ROS 2, micro-ROS versions](https://kamathrobotics.com/upgrading-ros-2-micro-ros-versions)
+    
+* [Teleop with Game Controllers](https://kamathrobotics.com/teleop-with-game-controllers)
+    
+* [Updating the Robot Description](https://kamathrobotics.com/updating-the-robot-description)
+    
+* [Micro-ROS Parameter Server](https://kamathrobotics.com/micro-ros-parameter-server)
+    
+* [Visualizing Robots in Unity](https://kamathrobotics.com/visualizing-robots-in-unity)
+    
+* [Steam Deck as a Robot Controller](https://kamathrobotics.com/steam-deck-as-a-robot-controller)
