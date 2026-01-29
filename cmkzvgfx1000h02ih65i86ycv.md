@@ -3,7 +3,7 @@ title: "Vibe-Coded Robot Playgrounds"
 datePublished: Thu Jan 29 2026 19:53:28 GMT+0000 (Coordinated Universal Time)
 cuid: cmkzvgfx1000h02ih65i86ycv
 slug: vibe-coded-robot-playgrounds
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769716924833/056865b1-dae1-496e-a5e7-5eb4d943232d.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769717237400/31c79b84-5f75-4d2e-bf96-b6c58d87912b.png
 
 ---
 
