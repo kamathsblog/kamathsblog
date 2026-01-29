@@ -23,8 +23,6 @@ Note that if you want to use the keyboard keys, you must first click on the box 
 
 %[https://codepen.io/adityakamath/full/LEZZzoq] 
 
----
-
 ## KR0003
 
 > GitHub: [https://github.com/adityakamath/kr0003\_description](https://github.com/adityakamath/kr0003_description)
@@ -32,8 +30,6 @@ Note that if you want to use the keyboard keys, you must first click on the box 
 Mecanum-wheeled robot platform, which seems to be off the market now. We have one at work, and I created a URDF for it as a weekend project and made it available online. It later became part of an internal innovation project at Capgemini Engineering, where we developed additional features, like a simulation package and teleoperation using a VR headset.
 
 %[https://codepen.io/adityakamath/full/myEXPrK] 
-
----
 
 ## AKROS
 
