@@ -116,7 +116,7 @@ RCLCPP_INFO(logger_, "Motor groupings: %zu servo, %zu velocity, %zu PWM",
 
 STS motors speak their own language (steps, raw PWM values), while ROS 2 expects proper SI units (radians, rad/s) and standardized coordinate frames (according to [REP-103](https://www.ros.org/reps/rep-0103.html)). The hardware interface translates between these worlds:
 
-### Position (State & Command) Interface
+### Position (State/Command) Interface
 
 * **Motor:** 0-4095 steps (one full revolution)
     
@@ -135,7 +135,7 @@ double raw_position_to_radians(int raw_position) const {
 
 See that `inverted_raw` line? **That's not optional.** The motors increment clockwise while ROS increments counterclockwise. I spent an entire Saturday evening watching the motors spin backwards before the lightbulb moment hit.
 
-### Velocity (State & Command) Interface
+### Velocity (State/Command) Interface
 
 * **STS3215:** `[-max_velocity_steps, max_velocity_steps]` steps/s
     
@@ -144,7 +144,7 @@ See that `inverted_raw` line? **That's not optional.** The motors increment cloc
 * **Note:** The `max_velocity_steps` parameter is configurable per joint and defaults to 3400 steps/s for the STS3215. However, the parameter must be updated for other STS series motors, as they have different max speeds.
     
 
-### Effort/PWM (State & Command) Interface
+### Effort/PWM (State/Command) Interface
 
 * **Motor:** `[-1000, 1000]` (representing -100% to +100% duty cycle, where the sign represents the direction)
     
