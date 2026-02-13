@@ -252,17 +252,17 @@ Commands flow from **controllers → enforced safety limits → unit conversion 
 
 Ever watch a robot go crazy while you frantically search for the power switch? Yeah, me too. That's why I added an emergency stop into the hardware interface as a first-class feature, not an afterthought.
 
-Another amazing feature of the STS protocol - `Broadcast` - lets you command all motors at once. One packet controls the entire serial bus without looping through motor IDs, which is perfect for an emergency stop. This can be triggered via a ROS 2 topic:
+Another amazing feature of the STS protocol - `Broadcast` - lets you command all motors at once. One packet controls the entire serial bus without looping through motor IDs, which is perfect for an emergency stop. This can be triggered via a ROS 2 service:
 
 ```bash
 # Stop everything NOW
-ros2 topic pub /emergency_stop std_msgs/msg/Bool "data: true"
+ros2 service call /emergency_stop std_srvs/srv/SetBool "{data: true}"
 
 # Resume normal operation
-ros2 topic pub /emergency_stop std_msgs/msg/Bool "data: false"
+ros2 service call /emergency_stop std_srvs/srv/SetBool "{data: false}"
 ```
 
-The hardware interface creates a ROS 2 subscriber (during `on_configure()`) that subscribes to boolean messages. Incoming messages are processed every `read()` cycle. On receiving a message, the callback sets the flag, and the next `write()` cycle broadcasts the stop. Just like in the lifecycle states, when the emergency stop is enabled, all motors are stopped using a broadcast message, and their torques are disabled.
+The hardware interface creates a ROS 2 service server (during `on_configure()`) that accepts `std_srvs/SetBool` requests. Incoming service calls are processed every `read()` cycle via `spin_some()`. On receiving a request, the callback sets the flag, and the next `write()` cycle broadcasts the stop. The service returns `success: true` and a confirmation message on both activation and release. Just like in the lifecycle states, when the emergency stop is enabled, all motors are stopped, and their torques are disabled. The torque is enabled when the emergency stop is released.
 
 ## Mock Mode
 
